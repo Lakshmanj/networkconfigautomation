@@ -4,11 +4,11 @@ from netmiko import ConnectHandler
 # Create a python dictionary with will contain the necessary details to connect to the device
 # if we're connecting to multiple devices, make multiple dictionaries
 device = {
-    'device_type': '',  # This specifies the type of device we're connecting to and helps
+    'device_type': 'cisco_ios',  # This specifies the type of device we're connecting to and helps
                         # Netmiko know how to handle said connection
-    'host': '',         # This is the ip address/hostname of the device we're connecting to
-    'username': '',     # Username and password to connect to the device
-    'password': '',
+    'host': '192.168.1.1',         # This is the ip address/hostname of the device we're connecting to
+    'username': 'admin',     # Username and password to connect to the device
+    'password': 'pwd1234',
 }
 # Connection is a variable that stores the "ConnectHandler" function
 # it will unpack the dictionary(ies) and establish the connection(s)
@@ -38,3 +38,4 @@ print(output)
 
 # This will disconnect the session
 connection.disconnect()
+
