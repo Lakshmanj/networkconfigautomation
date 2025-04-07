@@ -12,6 +12,7 @@ device = {
 }
 # Connection is a variable that stores the "ConnectHandler" function
 # it will unpack the dictionary(ies) and establish the connection(s)
+
 connection = ConnectHandler(**device)
 
 # if connecting to multiple devices use this;
