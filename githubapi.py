@@ -3,7 +3,7 @@ import subprocess
 from github import Github   
 
 #Replace thse with your own credentials
-repo_name = "your_repo_name" 
+repo_name = "Lakshmanj/networkconfigautomation"
 github_token = "your_github_token"
 command = "ls -l" #replace with your command you want to execute
 
