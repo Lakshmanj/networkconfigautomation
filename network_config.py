@@ -9,6 +9,8 @@ device = {
     'host': '192.168.1.1',         # This is the ip address/hostname of the device we're connecting to
     'username': 'admin',     # Username and password to connect to the device
     'password': 'pwd1234',
+    'port': 22,          # This is the port number for SSH, default is 22
+    'secret': 'enable_password',  # This is the enable password for the device, if required
 }
 # Connection is a variable that stores the "ConnectHandler" function
 # it will unpack the dictionary(ies) and establish the connection(s)
